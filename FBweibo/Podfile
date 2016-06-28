@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+
+target 'FBweibo' do
+pod 'SDWebImage', '~>3.7'
+pod "AFNetworking", "~> 2.0"
+pod 'Masonry'
+pod 'SVProgressHUD'
+pod 'pop', '~> 1.0'
+end
+
+project 'FBweibo.xcodeproj'

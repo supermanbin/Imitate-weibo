@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A611047158CCB41B73B77A73 /* libPods-FBweibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE389435A6F902560B0833D /* libPods-FBweibo.a */; };
+		F12309D71CA0F4F900819FD7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12309D61CA0F4F900819FD7 /* RootViewController.m */; };
+		F134812F1CC51892009CE516 /* ComposeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F134812E1CC51892009CE516 /* ComposeTabBar.m */; };
+		F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F16EDD011CD1F08B00592CD7 /* SearchBar.m */; };
+		F1708C9B1CA28401001A521B /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708C9A1CA28401001A521B /* CustomNavigationViewController.m */; };
+		F1708CA41CA2897D001A521B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708CA21CA2897D001A521B /* TestViewController.m */; };
+		F1708CA51CA2897D001A521B /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1708CA31CA2897D001A521B /* TestViewController.xib */; };
+		F1708CB31CA2A32B001A521B /* UIView+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708CB21CA2A32B001A521B /* UIView+Property.m */; };
+		F18BD2E31D1CC474002B65BC /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2CE1D1CC474002B65BC /* ComposeViewController.m */; };
+		F18BD2E41D1CC474002B65BC /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2D21D1CC474002B65BC /* DiscoverViewController.m */; };
+		F18BD2E51D1CC474002B65BC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2D71D1CC474002B65BC /* HomeViewController.m */; };
+		F18BD2E61D1CC474002B65BC /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2DD1D1CC474002B65BC /* MessagesViewController.m */; };
+		F18BD2E71D1CC474002B65BC /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2E11D1CC474002B65BC /* MineViewController.m */; };
+		F1C954221CB228EC003E840A /* UIBarButtonItem+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C954211CB228EC003E840A /* UIBarButtonItem+Tools.m */; };
+		F1F255751C9FDB8000D7AB78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F255741C9FDB8000D7AB78 /* main.m */; };
+		F1F255781C9FDB8000D7AB78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F255771C9FDB8000D7AB78 /* AppDelegate.m */; };
+		F1F255801C9FDB8000D7AB78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F2557F1C9FDB8000D7AB78 /* Assets.xcassets */; };
+		F1F255831C9FDB8000D7AB78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F255811C9FDB8000D7AB78 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BD0D1C211BAEB724250247E /* Pods-FBweibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBweibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo.debug.xcconfig"; sourceTree = "<group>"; };
+		A2489FECB8511C3DAA417755 /* Pods-FBweibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBweibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo.release.xcconfig"; sourceTree = "<group>"; };
+		EEE389435A6F902560B0833D /* libPods-FBweibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBweibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12309D51CA0F4F900819FD7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F12309D61CA0F4F900819FD7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F134812D1CC51892009CE516 /* ComposeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeTabBar.h; sourceTree = "<group>"; };
+		F134812E1CC51892009CE516 /* ComposeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeTabBar.m; sourceTree = "<group>"; };
+		F16EDD001CD1F08B00592CD7 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
+		F16EDD011CD1F08B00592CD7 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
+		F1708C991CA28401001A521B /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
+		F1708C9A1CA28401001A521B /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
+		F1708CA11CA2897D001A521B /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F1708CA21CA2897D001A521B /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		F1708CA31CA2897D001A521B /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		F1708CB11CA2A32B001A521B /* UIView+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Property.h"; sourceTree = "<group>"; };
+		F1708CB21CA2A32B001A521B /* UIView+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Property.m"; sourceTree = "<group>"; };
+		F18BD2CD1D1CC474002B65BC /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		F18BD2CE1D1CC474002B65BC /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		F18BD2D11D1CC474002B65BC /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		F18BD2D21D1CC474002B65BC /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		F18BD2D61D1CC474002B65BC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		F18BD2D71D1CC474002B65BC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		F18BD2DC1D1CC474002B65BC /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		F18BD2DD1D1CC474002B65BC /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		F18BD2E01D1CC474002B65BC /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		F18BD2E11D1CC474002B65BC /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		F1C954201CB228EC003E840A /* UIBarButtonItem+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Tools.h"; sourceTree = "<group>"; };
+		F1C954211CB228EC003E840A /* UIBarButtonItem+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Tools.m"; sourceTree = "<group>"; };
+		F1E004F01CA150B000B86060 /* FBweibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBweibo.pch; sourceTree = "<group>"; };
+		F1F255701C9FDB7F00D7AB78 /* FBweibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBweibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F255741C9FDB8000D7AB78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1F255761C9FDB8000D7AB78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1F255771C9FDB8000D7AB78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1F2557F1C9FDB8000D7AB78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1F255821C9FDB8000D7AB78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1F255841C9FDB8000D7AB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1F2556D1C9FDB7F00D7AB78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A611047158CCB41B73B77A73 /* libPods-FBweibo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50DF272691E0B631142DEE32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEE389435A6F902560B0833D /* libPods-FBweibo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E91CF56ACD3AEC0BDC7B4B86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BD0D1C211BAEB724250247E /* Pods-FBweibo.debug.xcconfig */,
+				A2489FECB8511C3DAA417755 /* Pods-FBweibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1148B751CD9D31800665E74 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		F12309D11CA0F4F900819FD7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2D41D1CC474002B65BC /* Home */,
+				F18BD2D91D1CC474002B65BC /* Messages */,
+				F18BD2CA1D1CC474002B65BC /* Compose */,
+				F18BD2CF1D1CC474002B65BC /* Discover */,
+				F18BD2DE1D1CC474002B65BC /* Mine */,
+				F1148B751CD9D31800665E74 /* NetWork */,
+				F1708CB01CA2A31C001A521B /* Category */,
+				F1E004EE1CA146BF00B86060 /* Other */,
+				F12309D21CA0F4F900819FD7 /* Root */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F12309D21CA0F4F900819FD7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F12309D31CA0F4F900819FD7 /* Views */,
+				F12309D41CA0F4F900819FD7 /* Controllers */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F12309D31CA0F4F900819FD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F134812D1CC51892009CE516 /* ComposeTabBar.h */,
+				F134812E1CC51892009CE516 /* ComposeTabBar.m */,
+				F16EDD001CD1F08B00592CD7 /* SearchBar.h */,
+				F16EDD011CD1F08B00592CD7 /* SearchBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F12309D41CA0F4F900819FD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F12309D51CA0F4F900819FD7 /* RootViewController.h */,
+				F12309D61CA0F4F900819FD7 /* RootViewController.m */,
+				F1708C991CA28401001A521B /* CustomNavigationViewController.h */,
+				F1708C9A1CA28401001A521B /* CustomNavigationViewController.m */,
+				F1708CA11CA2897D001A521B /* TestViewController.h */,
+				F1708CA21CA2897D001A521B /* TestViewController.m */,
+				F1708CA31CA2897D001A521B /* TestViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1708CB01CA2A31C001A521B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F1708CB11CA2A32B001A521B /* UIView+Property.h */,
+				F1708CB21CA2A32B001A521B /* UIView+Property.m */,
+				F1C954201CB228EC003E840A /* UIBarButtonItem+Tools.h */,
+				F1C954211CB228EC003E840A /* UIBarButtonItem+Tools.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F18BD2CA1D1CC474002B65BC /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2CB1D1CC474002B65BC /* Views */,
+				F18BD2CC1D1CC474002B65BC /* Controller */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		F18BD2CB1D1CC474002B65BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F18BD2CC1D1CC474002B65BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2CD1D1CC474002B65BC /* ComposeViewController.h */,
+				F18BD2CE1D1CC474002B65BC /* ComposeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F18BD2CF1D1CC474002B65BC /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2D01D1CC474002B65BC /* Controller */,
+				F18BD2D31D1CC474002B65BC /* Views */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F18BD2D01D1CC474002B65BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2D11D1CC474002B65BC /* DiscoverViewController.h */,
+				F18BD2D21D1CC474002B65BC /* DiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F18BD2D31D1CC474002B65BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F18BD2D41D1CC474002B65BC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2D51D1CC474002B65BC /* Controller */,
+				F18BD2D81D1CC474002B65BC /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F18BD2D51D1CC474002B65BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2D61D1CC474002B65BC /* HomeViewController.h */,
+				F18BD2D71D1CC474002B65BC /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F18BD2D81D1CC474002B65BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F18BD2D91D1CC474002B65BC /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2DA1D1CC474002B65BC /* Views */,
+				F18BD2DB1D1CC474002B65BC /* Controller */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		F18BD2DA1D1CC474002B65BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F18BD2DB1D1CC474002B65BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2DC1D1CC474002B65BC /* MessagesViewController.h */,
+				F18BD2DD1D1CC474002B65BC /* MessagesViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F18BD2DE1D1CC474002B65BC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2DF1D1CC474002B65BC /* Controller */,
+				F18BD2E21D1CC474002B65BC /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F18BD2DF1D1CC474002B65BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F18BD2E01D1CC474002B65BC /* MineViewController.h */,
+				F18BD2E11D1CC474002B65BC /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F18BD2E21D1CC474002B65BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1CC941C1CB6564000024FBE /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		F1E004EE1CA146BF00B86060 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F1E004F01CA150B000B86060 /* FBweibo.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F1F255671C9FDB7F00D7AB78 = {
+			isa = PBXGroup;
+			children = (
+				F1F255721C9FDB7F00D7AB78 /* FBweibo */,
+				F1F255711C9FDB7F00D7AB78 /* Products */,
+				E91CF56ACD3AEC0BDC7B4B86 /* Pods */,
+				50DF272691E0B631142DEE32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F255711C9FDB7F00D7AB78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F255701C9FDB7F00D7AB78 /* FBweibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F255721C9FDB7F00D7AB78 /* FBweibo */ = {
+			isa = PBXGroup;
+			children = (
+				F1CC941C1CB6564000024FBE /* Vender */,
+				F12309D11CA0F4F900819FD7 /* Class */,
+				F1F255761C9FDB8000D7AB78 /* AppDelegate.h */,
+				F1F255771C9FDB8000D7AB78 /* AppDelegate.m */,
+				F1F2557F1C9FDB8000D7AB78 /* Assets.xcassets */,
+				F1F255811C9FDB8000D7AB78 /* LaunchScreen.storyboard */,
+				F1F255841C9FDB8000D7AB78 /* Info.plist */,
+				F1F255731C9FDB8000D7AB78 /* Supporting Files */,
+			);
+			path = FBweibo;
+			sourceTree = "<group>";
+		};
+		F1F255731C9FDB8000D7AB78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1F255741C9FDB8000D7AB78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1F2556F1C9FDB7F00D7AB78 /* FBweibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F255871C9FDB8000D7AB78 /* Build configuration list for PBXNativeTarget "FBweibo" */;
+			buildPhases = (
+				8675AEC1A4A1887AAF0C2318 /* [CP] Check Pods Manifest.lock */,
+				F1F2556C1C9FDB7F00D7AB78 /* Sources */,
+				F1F2556D1C9FDB7F00D7AB78 /* Frameworks */,
+				F1F2556E1C9FDB7F00D7AB78 /* Resources */,
+				F7C475AD70EAC68F9B7C174D /* [CP] Embed Pods Frameworks */,
+				DAB21D31CD3BA6E127E064BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBweibo;
+			productName = FBweibo;
+			productReference = F1F255701C9FDB7F00D7AB78 /* FBweibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F255681C9FDB7F00D7AB78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = supermanUI;
+				TargetAttributes = {
+					F1F2556F1C9FDB7F00D7AB78 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F1F2556B1C9FDB7F00D7AB78 /* Build configuration list for PBXProject "FBweibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1F255671C9FDB7F00D7AB78;
+			productRefGroup = F1F255711C9FDB7F00D7AB78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F2556F1C9FDB7F00D7AB78 /* FBweibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1F2556E1C9FDB7F00D7AB78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F255831C9FDB8000D7AB78 /* LaunchScreen.storyboard in Resources */,
+				F1708CA51CA2897D001A521B /* TestViewController.xib in Resources */,
+				F1F255801C9FDB8000D7AB78 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8675AEC1A4A1887AAF0C2318 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB21D31CD3BA6E127E064BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C475AD70EAC68F9B7C174D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1F2556C1C9FDB7F00D7AB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F255781C9FDB8000D7AB78 /* AppDelegate.m in Sources */,
+				F18BD2E41D1CC474002B65BC /* DiscoverViewController.m in Sources */,
+				F18BD2E51D1CC474002B65BC /* HomeViewController.m in Sources */,
+				F134812F1CC51892009CE516 /* ComposeTabBar.m in Sources */,
+				F18BD2E71D1CC474002B65BC /* MineViewController.m in Sources */,
+				F1C954221CB228EC003E840A /* UIBarButtonItem+Tools.m in Sources */,
+				F18BD2E31D1CC474002B65BC /* ComposeViewController.m in Sources */,
+				F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */,
+				F1F255751C9FDB8000D7AB78 /* main.m in Sources */,
+				F12309D71CA0F4F900819FD7 /* RootViewController.m in Sources */,
+				F1708CA41CA2897D001A521B /* TestViewController.m in Sources */,
+				F18BD2E61D1CC474002B65BC /* MessagesViewController.m in Sources */,
+				F1708CB31CA2A32B001A521B /* UIView+Property.m in Sources */,
+				F1708C9B1CA28401001A521B /* CustomNavigationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1F255811C9FDB8000D7AB78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F255821C9FDB8000D7AB78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1F255851C9FDB8000D7AB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1F255861C9FDB8000D7AB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F255881C9FDB8000D7AB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD0D1C211BAEB724250247E /* Pods-FBweibo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FBweibo/Class/Other/FBweibo.pch;
+				INFOPLIST_FILE = FBweibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exmple.FBweibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1F255891C9FDB8000D7AB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2489FECB8511C3DAA417755 /* Pods-FBweibo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FBweibo/Class/Other/FBweibo.pch;
+				INFOPLIST_FILE = FBweibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exmple.FBweibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1F2556B1C9FDB7F00D7AB78 /* Build configuration list for PBXProject "FBweibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F255851C9FDB8000D7AB78 /* Debug */,
+				F1F255861C9FDB8000D7AB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F255871C9FDB8000D7AB78 /* Build configuration list for PBXNativeTarget "FBweibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F255881C9FDB8000D7AB78 /* Debug */,
+				F1F255891C9FDB8000D7AB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1F255681C9FDB7F00D7AB78 /* Project object */;
+}

@@ -1,0 +1,27 @@
+//
+//  FBweibo.pch
+//  FBweibo
+//
+//  Created by 封斌 on 16/3/22.
+//  Copyright © 2016年 supermanUI. All rights reserved.
+//
+
+#ifndef FBweibo_pch
+#define FBweibo_pch
+
+// public define
+
+#define RGBCOLOR(RGBVALUE, ALPHA) [UIColor colorWithRed:((float)((RGBVALUE & 0xFF0000) >> 16))/255.0 green:((float)((RGBVALUE & 0xFF00) >> 8))/255.0 blue:((float)(RGBVALUE & 0xFF))/255.0 alpha:ALPHA]
+#define RGB_COLOR(RGBVALUE) RGBCOLOR(RGBVALUE, 1.0)
+
+// Category
+#import "UIView+Property.h"
+#import "UIBarButtonItem+Tools.h"
+
+#ifdef DEBUG
+#define FBLog(...) NSLog(__VA_ARGS__)
+#else
+#define FBLog(...)
+#endif
+
+#endif /* FBweibo_pch */
