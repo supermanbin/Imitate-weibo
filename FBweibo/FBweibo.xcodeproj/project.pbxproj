@@ -12,8 +12,6 @@
 		F134812F1CC51892009CE516 /* ComposeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F134812E1CC51892009CE516 /* ComposeTabBar.m */; };
 		F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F16EDD011CD1F08B00592CD7 /* SearchBar.m */; };
 		F1708C9B1CA28401001A521B /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708C9A1CA28401001A521B /* CustomNavigationViewController.m */; };
-		F1708CA41CA2897D001A521B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708CA21CA2897D001A521B /* TestViewController.m */; };
-		F1708CA51CA2897D001A521B /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1708CA31CA2897D001A521B /* TestViewController.xib */; };
 		F1708CB31CA2A32B001A521B /* UIView+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708CB21CA2A32B001A521B /* UIView+Property.m */; };
 		F18BD2E31D1CC474002B65BC /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2CE1D1CC474002B65BC /* ComposeViewController.m */; };
 		F18BD2E41D1CC474002B65BC /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2D21D1CC474002B65BC /* DiscoverViewController.m */; };
@@ -39,9 +37,6 @@
 		F16EDD011CD1F08B00592CD7 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 		F1708C991CA28401001A521B /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		F1708C9A1CA28401001A521B /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
-		F1708CA11CA2897D001A521B /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		F1708CA21CA2897D001A521B /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		F1708CA31CA2897D001A521B /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		F1708CB11CA2A32B001A521B /* UIView+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Property.h"; sourceTree = "<group>"; };
 		F1708CB21CA2A32B001A521B /* UIView+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Property.m"; sourceTree = "<group>"; };
 		F18BD2CD1D1CC474002B65BC /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
@@ -145,9 +140,6 @@
 				F12309D61CA0F4F900819FD7 /* RootViewController.m */,
 				F1708C991CA28401001A521B /* CustomNavigationViewController.h */,
 				F1708C9A1CA28401001A521B /* CustomNavigationViewController.m */,
-				F1708CA11CA2897D001A521B /* TestViewController.h */,
-				F1708CA21CA2897D001A521B /* TestViewController.m */,
-				F1708CA31CA2897D001A521B /* TestViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -378,6 +370,7 @@
 				TargetAttributes = {
 					F1F2556F1C9FDB7F00D7AB78 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6MRSCJWNQ5;
 					};
 				};
 			};
@@ -405,7 +398,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F255831C9FDB8000D7AB78 /* LaunchScreen.storyboard in Resources */,
-				F1708CA51CA2897D001A521B /* TestViewController.xib in Resources */,
 				F1F255801C9FDB8000D7AB78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +467,6 @@
 				F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */,
 				F1F255751C9FDB8000D7AB78 /* main.m in Sources */,
 				F12309D71CA0F4F900819FD7 /* RootViewController.m in Sources */,
-				F1708CA41CA2897D001A521B /* TestViewController.m in Sources */,
 				F18BD2E61D1CC474002B65BC /* MessagesViewController.m in Sources */,
 				F1708CB31CA2A32B001A521B /* UIView+Property.m in Sources */,
 				F1708C9B1CA28401001A521B /* CustomNavigationViewController.m in Sources */,
@@ -582,6 +573,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FBweibo/Class/Other/FBweibo.pch;
 				INFOPLIST_FILE = FBweibo/Info.plist;
@@ -589,6 +582,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.exmple.FBweibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -598,6 +592,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FBweibo/Class/Other/FBweibo.pch;
 				INFOPLIST_FILE = FBweibo/Info.plist;
@@ -605,6 +601,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.exmple.FBweibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
