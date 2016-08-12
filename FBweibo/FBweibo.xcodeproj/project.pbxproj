@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A611047158CCB41B73B77A73 /* libPods-FBweibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE389435A6F902560B0833D /* libPods-FBweibo.a */; };
+		F1219B491D5DC1FB00EF00A8 /* CodeGuideLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F1219B481D5DC1FB00EF00A8 /* CodeGuideLine.m */; };
 		F12309D71CA0F4F900819FD7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12309D61CA0F4F900819FD7 /* RootViewController.m */; };
 		F134812F1CC51892009CE516 /* ComposeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F134812E1CC51892009CE516 /* ComposeTabBar.m */; };
 		F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F16EDD011CD1F08B00592CD7 /* SearchBar.m */; };
@@ -19,7 +20,6 @@
 		F18BD2E61D1CC474002B65BC /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2DD1D1CC474002B65BC /* MessagesViewController.m */; };
 		F18BD2E71D1CC474002B65BC /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18BD2E11D1CC474002B65BC /* MineViewController.m */; };
 		F1C954221CB228EC003E840A /* UIBarButtonItem+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C954211CB228EC003E840A /* UIBarButtonItem+Tools.m */; };
-		F1EDCB7A1D5C180F008593CC /* ButtonOfHomeTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EDCB791D5C180F008593CC /* ButtonOfHomeTitle.m */; };
 		F1EDCB7D1D5C2D64008593CC /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EDCB7C1D5C2D64008593CC /* CustomView.m */; };
 		F1F255751C9FDB8000D7AB78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F255741C9FDB8000D7AB78 /* main.m */; };
 		F1F255781C9FDB8000D7AB78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F255771C9FDB8000D7AB78 /* AppDelegate.m */; };
@@ -31,6 +31,7 @@
 		7BD0D1C211BAEB724250247E /* Pods-FBweibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBweibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo.debug.xcconfig"; sourceTree = "<group>"; };
 		A2489FECB8511C3DAA417755 /* Pods-FBweibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBweibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo.release.xcconfig"; sourceTree = "<group>"; };
 		EEE389435A6F902560B0833D /* libPods-FBweibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBweibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1219B481D5DC1FB00EF00A8 /* CodeGuideLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeGuideLine.m; sourceTree = "<group>"; };
 		F12309D51CA0F4F900819FD7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F12309D61CA0F4F900819FD7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F134812D1CC51892009CE516 /* ComposeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeTabBar.h; sourceTree = "<group>"; };
@@ -54,8 +55,6 @@
 		F1C954201CB228EC003E840A /* UIBarButtonItem+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Tools.h"; sourceTree = "<group>"; };
 		F1C954211CB228EC003E840A /* UIBarButtonItem+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Tools.m"; sourceTree = "<group>"; };
 		F1E004F01CA150B000B86060 /* FBweibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBweibo.pch; sourceTree = "<group>"; };
-		F1EDCB781D5C180F008593CC /* ButtonOfHomeTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonOfHomeTitle.h; sourceTree = "<group>"; };
-		F1EDCB791D5C180F008593CC /* ButtonOfHomeTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonOfHomeTitle.m; sourceTree = "<group>"; };
 		F1EDCB7B1D5C2D64008593CC /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		F1EDCB7C1D5C2D64008593CC /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		F1F255701C9FDB7F00D7AB78 /* FBweibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBweibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +114,7 @@
 				F1708CB01CA2A31C001A521B /* Category */,
 				F1E004EE1CA146BF00B86060 /* Other */,
 				F12309D21CA0F4F900819FD7 /* Root */,
+				F1219B481D5DC1FB00EF00A8 /* CodeGuideLine.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -232,8 +232,6 @@
 		F18BD2D81D1CC474002B65BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F1EDCB781D5C180F008593CC /* ButtonOfHomeTitle.h */,
-				F1EDCB791D5C180F008593CC /* ButtonOfHomeTitle.m */,
 				F1EDCB7B1D5C2D64008593CC /* CustomView.h */,
 				F1EDCB7C1D5C2D64008593CC /* CustomView.m */,
 			);
@@ -478,7 +476,7 @@
 				F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */,
 				F1F255751C9FDB8000D7AB78 /* main.m in Sources */,
 				F12309D71CA0F4F900819FD7 /* RootViewController.m in Sources */,
-				F1EDCB7A1D5C180F008593CC /* ButtonOfHomeTitle.m in Sources */,
+				F1219B491D5DC1FB00EF00A8 /* CodeGuideLine.m in Sources */,
 				F18BD2E61D1CC474002B65BC /* MessagesViewController.m in Sources */,
 				F1708CB31CA2A32B001A521B /* UIView+Property.m in Sources */,
 				F1708C9B1CA28401001A521B /* CustomNavigationViewController.m in Sources */,
