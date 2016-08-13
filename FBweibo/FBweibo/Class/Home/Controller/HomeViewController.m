@@ -11,7 +11,7 @@
 #import "DropMenuView.h"
 
 @interface HomeViewController ()
-
+@property (nonatomic, weak) DropMenuView *menu;
 @end
 
 @implementation HomeViewController
@@ -61,7 +61,5 @@
     DropMenuView *menu = [DropMenuView menu];
     [menu showMenu];
 }
-
-
 
 @end

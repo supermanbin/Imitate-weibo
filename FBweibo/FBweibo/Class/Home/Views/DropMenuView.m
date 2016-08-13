@@ -9,7 +9,7 @@
 #import "DropMenuView.h"
 
 @interface DropMenuView ()
-
+@property (nonatomic, weak) UIView *contentWrapView;
 @end
 
 @implementation DropMenuView
@@ -22,17 +22,25 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UIView *backgroundView = [[UIView alloc] init];
-        backgroundView.backgroundColor = [UIColor blueColor];
-        [self.window addSubview:backgroundView];
+        self.backgroundColor = [UIColor colorWithRed:0
+                                               green:0
+                                                blue:0
+                                               alpha:0.3];
+        
+        // 内容容器
+        UIView *contentWrapView = [[UIView alloc] init];
+        contentWrapView.backgroundColor = [UIColor whiteColor];
+        contentWrapView.frame = CGRectMake(0, 0, 100, 100);
+        [self addSubview:contentWrapView];
+        self.contentWrapView = contentWrapView;
     }
     return self;
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-}
+//- (void)layoutSubviews {
+//    [super layoutSubviews];
+//    
+//}
 
 - (void)showMenu {
     // 获取最顶层window
@@ -43,6 +51,6 @@
 }
 
 - (void)dismiss {
-    
+    [self removeFromSuperview];
 }
 @end
