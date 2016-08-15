@@ -59,7 +59,7 @@
  */
 - (void)buttonTouchUpInsideAction:(UIButton *)sender {
     POPBasicAnimation *backgroundAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerBackgroundColor];
-    backgroundAnimation.toValue = [UIColor whiteColor];
+    backgroundAnimation.toValue = [UIColor redColor];
     [sender.layer pop_addAnimation:backgroundAnimation forKey:@"buttonLayerNormalColor"];
     
     POPBasicAnimation *rotationAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerRotationX];

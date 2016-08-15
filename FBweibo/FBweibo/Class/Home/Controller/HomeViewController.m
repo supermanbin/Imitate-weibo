@@ -42,6 +42,11 @@
     titleBtn.frame = CGRectMake(0, 0, 50, 30);
     self.navigationItem.titleView = titleBtn;
     
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 100, 150, 30);
+    btn.backgroundColor = [UIColor orangeColor];
+    [btn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
 #pragma Mark - Custom Accessores
@@ -59,7 +64,23 @@
 #pragma Mark - Button Action
 - (void)buttonTouchUpInsideAction:(UIButton *)sender {
     DropMenuView *menu = [DropMenuView menu];
-    [menu showMenu];
+    [menu showFrom:sender];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [btn addTarget:self action:@selector(dismissMenu) forControlEvents:UIControlEventTouchUpInside];
+    menu.content = btn;
 }
 
+- (void)dismissMenu {
+    [DropMenuView dismiss];
+}
+
+- (void)clickAction:(UIButton *)sender {
+    DropMenuView *menu = [DropMenuView menu];
+    [menu showFrom:sender];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 130, 130)];
+    view.backgroundColor = [UIColor blueColor];
+    menu.content = view;
+}
 @end
