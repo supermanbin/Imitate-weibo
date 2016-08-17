@@ -36,6 +36,8 @@
         self.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         self.titleLabel.textAlignment = NSTextAlignmentLeft;
         self.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+        
+//        FBLog(@"%@", NSStringFromCGRect(frame));
     }
     return self;
 }
@@ -59,7 +61,7 @@
  */
 - (void)buttonTouchUpInsideAction:(UIButton *)sender {
     POPBasicAnimation *backgroundAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerBackgroundColor];
-    backgroundAnimation.toValue = [UIColor redColor];
+    backgroundAnimation.toValue = [UIColor whiteColor];
     [sender.layer pop_addAnimation:backgroundAnimation forKey:@"buttonLayerNormalColor"];
     
     POPBasicAnimation *rotationAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerRotationX];

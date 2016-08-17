@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A611047158CCB41B73B77A73 /* libPods-FBweibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE389435A6F902560B0833D /* libPods-FBweibo.a */; };
+		F10F2A231D62BAC8000F9876 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10F2A221D62BAC8000F9876 /* TestTableViewController.m */; };
 		F1219B491D5DC1FB00EF00A8 /* CodeGuideLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F1219B481D5DC1FB00EF00A8 /* CodeGuideLine.m */; };
 		F12309D71CA0F4F900819FD7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12309D61CA0F4F900819FD7 /* RootViewController.m */; };
 		F134812F1CC51892009CE516 /* ComposeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F134812E1CC51892009CE516 /* ComposeTabBar.m */; };
+		F154A93A1D644C3E00335294 /* FBDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F154A9391D644C3E00335294 /* FBDropdownMenu.m */; };
+		F154A93D1D645F7300335294 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F154A93C1D645F7300335294 /* ModalViewController.m */; };
+		F154A9401D6461D200335294 /* BouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F154A93F1D6461D200335294 /* BouncePresentAnimation.m */; };
 		F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F16EDD011CD1F08B00592CD7 /* SearchBar.m */; };
 		F1708C9B1CA28401001A521B /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708C9A1CA28401001A521B /* CustomNavigationViewController.m */; };
 		F1708CB31CA2A32B001A521B /* UIView+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = F1708CB21CA2A32B001A521B /* UIView+Property.m */; };
@@ -32,11 +36,19 @@
 		7BD0D1C211BAEB724250247E /* Pods-FBweibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBweibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo.debug.xcconfig"; sourceTree = "<group>"; };
 		A2489FECB8511C3DAA417755 /* Pods-FBweibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBweibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBweibo/Pods-FBweibo.release.xcconfig"; sourceTree = "<group>"; };
 		EEE389435A6F902560B0833D /* libPods-FBweibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBweibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10F2A211D62BAC8000F9876 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		F10F2A221D62BAC8000F9876 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		F1219B481D5DC1FB00EF00A8 /* CodeGuideLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeGuideLine.m; sourceTree = "<group>"; };
 		F12309D51CA0F4F900819FD7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F12309D61CA0F4F900819FD7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F134812D1CC51892009CE516 /* ComposeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeTabBar.h; sourceTree = "<group>"; };
 		F134812E1CC51892009CE516 /* ComposeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeTabBar.m; sourceTree = "<group>"; };
+		F154A9381D644C3E00335294 /* FBDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDropdownMenu.h; sourceTree = "<group>"; };
+		F154A9391D644C3E00335294 /* FBDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDropdownMenu.m; sourceTree = "<group>"; };
+		F154A93B1D645F7300335294 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		F154A93C1D645F7300335294 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		F154A93E1D6461D200335294 /* BouncePresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimation.h; sourceTree = "<group>"; };
+		F154A93F1D6461D200335294 /* BouncePresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimation.m; sourceTree = "<group>"; };
 		F16EDD001CD1F08B00592CD7 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
 		F16EDD011CD1F08B00592CD7 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 		F1708C991CA28401001A521B /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
@@ -228,6 +240,12 @@
 			children = (
 				F18BD2D61D1CC474002B65BC /* HomeViewController.h */,
 				F18BD2D71D1CC474002B65BC /* HomeViewController.m */,
+				F10F2A211D62BAC8000F9876 /* TestTableViewController.h */,
+				F10F2A221D62BAC8000F9876 /* TestTableViewController.m */,
+				F154A93B1D645F7300335294 /* ModalViewController.h */,
+				F154A93C1D645F7300335294 /* ModalViewController.m */,
+				F154A93E1D6461D200335294 /* BouncePresentAnimation.h */,
+				F154A93F1D6461D200335294 /* BouncePresentAnimation.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +257,8 @@
 				F1B769961D5EB5D10011A79C /* NavigationItemTitleViewButton.m */,
 				F1B769981D5ECF250011A79C /* DropMenuView.h */,
 				F1B769991D5ECF250011A79C /* DropMenuView.m */,
+				F154A9381D644C3E00335294 /* FBDropdownMenu.h */,
+				F154A9391D644C3E00335294 /* FBDropdownMenu.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,6 +398,7 @@
 		F1F255681C9FDB7F00D7AB78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = supermanUI;
 				TargetAttributes = {
@@ -470,20 +491,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F154A9401D6461D200335294 /* BouncePresentAnimation.m in Sources */,
 				F1F255781C9FDB8000D7AB78 /* AppDelegate.m in Sources */,
 				F18BD2E41D1CC474002B65BC /* DiscoverViewController.m in Sources */,
 				F18BD2E51D1CC474002B65BC /* HomeViewController.m in Sources */,
 				F134812F1CC51892009CE516 /* ComposeTabBar.m in Sources */,
+				F10F2A231D62BAC8000F9876 /* TestTableViewController.m in Sources */,
 				F18BD2E71D1CC474002B65BC /* MineViewController.m in Sources */,
 				F1C954221CB228EC003E840A /* UIBarButtonItem+Tools.m in Sources */,
 				F18BD2E31D1CC474002B65BC /* ComposeViewController.m in Sources */,
 				F16EDD021CD1F08B00592CD7 /* SearchBar.m in Sources */,
+				F154A93A1D644C3E00335294 /* FBDropdownMenu.m in Sources */,
 				F1F255751C9FDB8000D7AB78 /* main.m in Sources */,
 				F12309D71CA0F4F900819FD7 /* RootViewController.m in Sources */,
 				F1219B491D5DC1FB00EF00A8 /* CodeGuideLine.m in Sources */,
 				F18BD2E61D1CC474002B65BC /* MessagesViewController.m in Sources */,
 				F1708CB31CA2A32B001A521B /* UIView+Property.m in Sources */,
 				F1B769971D5EB5D10011A79C /* NavigationItemTitleViewButton.m in Sources */,
+				F154A93D1D645F7300335294 /* ModalViewController.m in Sources */,
 				F1B7699A1D5ECF250011A79C /* DropMenuView.m in Sources */,
 				F1708C9B1CA28401001A521B /* CustomNavigationViewController.m in Sources */,
 			);

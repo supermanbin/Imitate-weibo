@@ -7,6 +7,7 @@
 //
 
 #import "DropMenuView.h"
+#import <pop/POP.h>
 
 @interface DropMenuView ()
 @property (nonatomic, weak) UIView *contentWrapView;
@@ -45,27 +46,27 @@ static DropMenuView *shareView = nil;
 - (void)showFrom:(UIView *)fromView {
     // 获取最顶层window
     UIWindow *window = [UIApplication sharedApplication].windows.lastObject;
-    window.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissFormWindow)];
-    [window addGestureRecognizer:tapGesture];
-    
     self.frame = window.bounds;
     [window addSubview:self];
     
     // 坐标转换
-    CGRect rect = [fromView.superview convertRect:fromView.frame toView:nil];
-    FBLog(@"%@", NSStringFromCGRect(rect));
+    CGRect rect = [window convertRect:fromView.bounds fromView:fromView];
     self.contentWrapView.y = CGRectGetMaxY(rect)+6.0;
     self.contentWrapView.centerX = CGRectGetMidX(rect);
     
-    FBLog(@"rect:::%f, contentWrapView::%f", CGRectGetMidX(rect), self.contentWrapView.centerX);
-    
+    if ([self.delegate respondsToSelector:@selector(dropMenuDidShow:)]) {
+        [self.delegate dropMenuDidShow:self];
+    }
 }
 
 - (void)dismissFormWindow {
     [self.content removeFromSuperview];
     [self.contentWrapView removeFromSuperview];
     [self removeFromSuperview];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissFormWindow];
 }
 
 #pragma Mark - Initialization
@@ -79,8 +80,7 @@ static DropMenuView *shareView = nil;
         self.backgroundColor = [UIColor colorWithRed:0
                                                green:0
                                                 blue:0
-                                               alpha:0.2];
-        _arrowDistence = 10.f;
+                                               alpha:0.3];
     }
     return self;
 }
@@ -96,7 +96,7 @@ static DropMenuView *shareView = nil;
         contentWrapView.layer.shadowRadius = 2.0;
         contentWrapView.layer.shadowOpacity = 0.2;
         [self addSubview:contentWrapView];
-        _contentWrapView = contentWrapView;
+        self.contentWrapView = contentWrapView;
     }
     return _contentWrapView;
 }
@@ -109,23 +109,42 @@ static DropMenuView *shareView = nil;
         arrowView.width = 10.0;
         arrowView.y = -4.0;
         arrowView.transform = CGAffineTransformMakeRotation(M_PI_4);
-        [self.contentWrapView addSubview:arrowView];
-        _arrowView = arrowView;
+        [self.contentWrapView insertSubview:arrowView atIndex:0];
+        self.arrowView = arrowView;
     }
     return _arrowView;
 }
 
 - (void)setContent:(UIView *)content {
-    content.x = 10;
-    content.y = 10;
-    self.contentWrapView.width = CGRectGetWidth(content.frame) + 20;
-    self.contentWrapView.height = CGRectGetHeight(content.frame) + 20;
-    [self.contentWrapView addSubview:content];
+    _content = content;
+    content.x = 5.0;
+    content.y = 5.0;
+    
     self.arrowView.centerX = content.centerX;
+    self.contentWrapView.width = CGRectGetWidth(content.frame) + 10.0;
+    self.contentWrapView.height = CGRectGetHeight(content.frame) + 10.0;
+    [self.contentWrapView addSubview:content];
+    [self setAnchorPoint:CGPointMake(0.5, 0.0) forView:self.contentWrapView];
+    
+    // 动画
+//    POPSpringAnimation *contentWrapViewAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+//    contentWrapViewAnimation.velocity = [NSValue valueWithCGSize:CGSizeMake(1.5, 1.5)];
+//    contentWrapViewAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.0, 1.0)];
+//    contentWrapViewAnimation.springBounciness = 18.0;
+//    [self.contentWrapView pop_addAnimation:contentWrapViewAnimation
+//                                          forKey:@"contentWrapViewAnimation"];
+    
 }
 
 - (void)setController:(UIViewController *)controller {
+    _controller = controller;
+    
     self.content = controller.view;
 }
 
+- (void) setAnchorPoint:(CGPoint)anchorpoint forView:(UIView *)view{
+    CGRect oldFrame = view.frame;
+    view.layer.anchorPoint = anchorpoint;
+    view.frame = oldFrame;
+}
 @end

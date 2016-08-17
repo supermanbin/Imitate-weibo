@@ -9,9 +9,18 @@
 #import "HomeViewController.h"
 #import "NavigationItemTitleViewButton.h"
 #import "DropMenuView.h"
+#import "TestTableViewController.h"
+#import "ModalViewController.h"
+#import "BouncePresentAnimation.h"
 
 @interface HomeViewController ()
+<DropMenuViewDelegate,
+ModalViewControllerDelegate,
+UIViewControllerTransitioningDelegate>
 @property (nonatomic, weak) DropMenuView *menu;
+@property (nonatomic, strong) TestTableViewController *testVC;
+
+@property (nonatomic, strong) BouncePresentAnimation *animation;
 @end
 
 @implementation HomeViewController
@@ -37,20 +46,21 @@
     [titleBtn setTitle:@"fengbin_superman"
               forState:UIControlStateNormal];
     [titleBtn addTarget:self
-                 action:@selector(buttonTouchUpInsideAction:)
+                 action:@selector(clickButtonPushModalVC)
        forControlEvents:UIControlEventTouchUpInside];
     titleBtn.frame = CGRectMake(0, 0, 50, 30);
     self.navigationItem.titleView = titleBtn;
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(100, 100, 150, 30);
-    btn.backgroundColor = [UIColor orangeColor];
-    [btn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    _animation = [BouncePresentAnimation new];
 }
 
 #pragma Mark - Custom Accessores
-
+- (TestTableViewController *)testVC {
+    if (!_testVC) {
+        _testVC = [[TestTableViewController alloc] init];
+    }
+    return _testVC;
+}
 
 #pragma Mark - Private Method
 - (void)friendatTenttionAction {
@@ -62,25 +72,39 @@
 }
 
 #pragma Mark - Button Action
-- (void)buttonTouchUpInsideAction:(UIButton *)sender {
+- (void)titleBtnAction:(UIButton *)sender {
     DropMenuView *menu = [DropMenuView menu];
+    menu.delegate = self;
+    self.testVC.view.width = 100;
+    self.testVC.view.height = 44 * 4;
+    menu.controller = self.testVC;
     [menu showFrom:sender];
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    [btn addTarget:self action:@selector(dismissMenu) forControlEvents:UIControlEventTouchUpInside];
-    menu.content = btn;
 }
 
 - (void)dismissMenu {
     [DropMenuView dismiss];
 }
 
-- (void)clickAction:(UIButton *)sender {
-    DropMenuView *menu = [DropMenuView menu];
-    [menu showFrom:sender];
-    
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 130, 130)];
-    view.backgroundColor = [UIColor blueColor];
-    menu.content = view;
+- (void)dropMenuDidShow:(DropMenuView *)menu {
+    FBLog(@"DropMenuView!!!!!");
+    [self addChildViewController:self.testVC];
 }
+
+- (void)clickButtonPushModalVC {
+    ModalViewController *modalVC = [[ModalViewController alloc] init];
+    modalVC.delegate = self;
+    modalVC.transitioningDelegate = self;
+    [self presentViewController:modalVC animated:YES completion:nil];
+}
+
+- (void)modalViewControllerDidClickedDismissButton:(ModalViewController *)viewController {
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.navigationController pushViewController:self.testVC animated:YES];
+    }];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return self.animation;
+}
+
 @end

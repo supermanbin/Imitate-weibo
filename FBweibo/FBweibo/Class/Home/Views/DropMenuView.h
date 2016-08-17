@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DropMenuView : UIView
+@class DropMenuView;
 
-//
-//- (void)showMenu;
-//- (void)dismiss;
+@protocol DropMenuViewDelegate <NSObject>
+
+@optional
+- (void)dropMenuDidShow:(DropMenuView *)menu;
+
+@end
+
+@interface DropMenuView : UIView
 
 + (instancetype)menu;
 /**
@@ -35,9 +40,6 @@
  */
 @property (nonatomic, strong) UIViewController *controller;
 
-/**
- *  箭头位置
- */
-@property (nonatomic, assign) CGFloat arrowDistence;
+@property (nonatomic, weak) id<DropMenuViewDelegate> delegate;
 
 @end

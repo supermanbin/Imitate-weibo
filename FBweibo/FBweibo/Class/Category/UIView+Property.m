@@ -60,13 +60,15 @@
     return self.frame.size;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setCenterX:(CGFloat)centerX
+{
     CGPoint center = self.center;
     center.x = centerX;
     self.center = center;
 }
 
-- (CGFloat)centerX {
+- (CGFloat)centerX
+{
     return self.center.x;
 }
 
