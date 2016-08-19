@@ -7,6 +7,7 @@
 //
 
 #import "ModalViewController.h"
+#import <Masonry.h>
 
 @interface ModalViewController ()
 
@@ -20,10 +21,13 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(20.0, 20.0, 160.0, 40.0);
     [button setTitle:@"Dismiss me" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(160.0, 40.0));
+    }];
 }
 
 - (void)buttonClicked:(UIButton *)sender {

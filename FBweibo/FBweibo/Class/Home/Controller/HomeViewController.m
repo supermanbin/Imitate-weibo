@@ -12,6 +12,7 @@
 #import "TestTableViewController.h"
 #import "ModalViewController.h"
 #import "BouncePresentAnimation.h"
+#import <Masonry.h>
 
 @interface HomeViewController ()
 <DropMenuViewDelegate,
@@ -51,7 +52,35 @@ UIViewControllerTransitioningDelegate>
     titleBtn.frame = CGRectMake(0, 0, 50, 30);
     self.navigationItem.titleView = titleBtn;
     
-    _animation = [BouncePresentAnimation new];
+    UIView *view1 = [UIView new];
+    view1.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:view1];
+    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.view);
+        make.left.equalTo(self.view).with.offset(10);
+        make.right.equalTo(self.view).with.offset(-10);
+        make.height.mas_equalTo(100);
+    }];
+    
+    UIView *view2 = [UIView new];
+    view2.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    [view1 addSubview:view2];
+    [view2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(view1).with.insets(UIEdgeInsetsMake(10.0,
+                                                               10.0,
+                                                               10.0,
+                                                               10.0));
+    }];
+    
+    UIView *view3 = [UIView new];
+    view3.backgroundColor = [UIColor darkGrayColor];
+    [self.view addSubview:view3];
+    [view3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(view1.mas_left);
+        make.top.equalTo(view1.mas_bottom).with.offset(10);
+        make.width.equalTo(view1.mas_width).with.multipliedBy(0.3);
+        make.height.equalTo(view1.mas_height);
+    }];
 }
 
 #pragma Mark - Custom Accessores
@@ -103,8 +132,11 @@ UIViewControllerTransitioningDelegate>
     }];
 }
 
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    return self.animation;
+- (id<UIViewControllerAnimatedTransitioning>)
+    animationControllerForPresentedController:(UIViewController *)presented
+                         presentingController:(UIViewController *)presenting
+                             sourceController:(UIViewController *)source {
+    return [BouncePresentAnimation new];
 }
 
 @end
